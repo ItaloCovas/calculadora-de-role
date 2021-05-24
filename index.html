@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Rolê</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <header class="introduction">
+            <h1>Calculadora de Rolê</h1>
+            <p>Bem-vindx à Calculadora de Rolê, sinta-se a vontade para usá-la e <span>veja o quanto você gastaria no rolê
+                de acordo com suas preferências!</span>  &#128526; &#127867;
+            </p>
+            <p class="regras">Regras do rolê:</p>
+            <ul>
+                <li>- Não morrer &#128565;</li>
+                <li>- Não se apaixonar &#128525;</li>
+                <li>- Não ser preso &#128274;</li>
+            </ul>
+    </header>
+
+    <main>
+        <section class="calculadora">
+        <form class="calculadora-role">
+            <label>Número de bares que quero ir: </label>
+            <input type="number" class="n-bares">
+
+            <label for="nivel-bares">Nível dos bares que quero ir: </label>
+            <select name="nivel-bares" class="nivel-bares">
+                <option value="1" selected>Litrão da Esquina</option>
+                <option value="2">Gim Tônica do Centro</option>
+                <option value="3">Rooftop</option>
+            </select>
+
+            <label>Número de baladas que quero ir: </label>
+            <input type="number" class="n-baladas">
+
+            <label for="nivel-balada">Nível da baladas que quero ir: </label>
+            <select name="nivel-balada" class="nivel-baladas">
+                <option value="1" selected>Padrão</option>
+                <option value="2">Rei do Camarote</option>
+            </select>
+
+            <label for="nivel-sede">Nível de sede do rolê: </label>
+            <select name="nivel-sede" class="nivel-sede">
+                <option value="1" selected>Social</option>
+                <option value="2">Comemoração</option>
+                <option value="3">Esquecer Ex</option>
+            </select>
+
+            <label>Quilômetros rodados de Uber: </label>
+            <input type="number" class="km-uber">
+
+            <label>Dia do rolê: </label>
+            <select name="dia-role" class="dia-role">
+                <option value="1" selected>Dia de Semana</option>
+                <option value="2">Sexta</option>
+                <option value="3">Sábado</option>
+                <option value="4">Domingo</option>
+            </select>
+
+            <label>Outros Gastos: </label>
+            <input type="number" placeholder="R$" class="outros-gastos">
+
+            <label>Escolha a imagem do rolê (OPCIONAL):</label>
+            <input type="file" id="img">
+
+
+            <a href="#" id="button">Calcular</a>
+        </form>
+        </section>
+    </main>
+
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
